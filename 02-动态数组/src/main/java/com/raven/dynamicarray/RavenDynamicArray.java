@@ -4,19 +4,19 @@ package com.raven.dynamicarray;
 /**
  * 自定义数组
  */
-public class RavenDynamicArray {
-    private final Integer DEFAULT_CAPACITY = 10;
-    private final Integer DEFAULT_NOT_INDEX = -1;
-    private Integer size = 0;
-    private int[] elements;
+public class RavenDynamicArray<E> {
+    private final static int DEFAULT_CAPACITY = 10;
+    private final static int DEFAULT_NOT_INDEX = -1;
+    private int size = 0;
+    private E[] elements;
 
-    public RavenDynamicArray(Integer capacity) {
+    public RavenDynamicArray(int capacity) {
         capacity = capacity > DEFAULT_CAPACITY ? capacity : DEFAULT_CAPACITY;
-        elements = new int[capacity];
+        elements = (E[]) new Object[capacity];
     }
 
     public RavenDynamicArray() {
-        this(10);
+        this(DEFAULT_CAPACITY);
     }
 
     /**
@@ -36,9 +36,16 @@ public class RavenDynamicArray {
     /**
      * 是否包含某个元素
      */
-    public Boolean contains(int element) {
-        for (int item : this.elements) {
-            if (item == element) {
+    public Boolean contains(E element) {
+        for (E item : this.elements) {
+            // 单独处理 null
+            if (null == element) {
+                if (element == item) {
+                    return true;
+                }
+            }
+
+            if (item.equals(element)) {
                 return true;
             }
         }
@@ -48,7 +55,7 @@ public class RavenDynamicArray {
     /**
      * 添加元素到最后面
      */
-    public void add(int element) {
+    public void add(E element) {
 //        this.elements[size] = element;
 //        size++;
         this.add(this.size, element);
@@ -57,7 +64,7 @@ public class RavenDynamicArray {
     /**
      * 返回 index 位置对应的元素
      */
-    public int get(int index) {
+    public E get(int index) {
         this.indexOutOfBoundsException(index);
         return this.elements[index];
     }
@@ -66,11 +73,11 @@ public class RavenDynamicArray {
      * 只能修改值，而不能添加
      * 设置index位置的元素
      */
-    public int set(int index, int element) {
+    public E set(int index, E element) {
 
         this.indexOutOfBoundsException(index);
 
-        int oldElement = this.elements[index];
+        E oldElement = this.elements[index];
         this.elements[index] = element;
         return oldElement;
     }
@@ -78,7 +85,7 @@ public class RavenDynamicArray {
     /**
      * 往 index 位置添加元素
      */
-    public void add(int index, int element) {
+    public void add(int index, E element) {
         this.indexOutOfBoundsExceptionOfAdd(index);
 
         // 移动数组
@@ -94,9 +101,9 @@ public class RavenDynamicArray {
     /**
      * 删除index位置的元素
      */
-    public int remove(int index) {
+    public E remove(int index) {
         this.indexOutOfBoundsException(index);
-        int oldElement = this.elements[index];
+        E oldElement = this.elements[index];
         // 移动数据
         for (int i = index; i < this.size; i++) {
             this.elements[i] = this.elements[i + 1];
@@ -108,9 +115,15 @@ public class RavenDynamicArray {
     /**
      * 查看元素的位置
      */
-    public int indexOf(int element) {
+    public int indexOf(E element) {
         for (int i = 0; i < this.size; i++) {
-            if (element == this.elements[i]) {
+            // 单独处理 null 情况
+            if (null == element) {
+                if (element == this.elements[i]) {
+                    return i;
+                }
+            }
+            if (this.elements[i].equals(element)) {
                 return i;
             }
         }
