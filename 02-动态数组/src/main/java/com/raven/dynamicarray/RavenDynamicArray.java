@@ -109,7 +109,9 @@ public class RavenDynamicArray<E> {
         for (int i = index; i < this.size; i++) {
             this.elements[i] = this.elements[i + 1];
         }
-        this.size--;
+        // 最后元素 null
+        this.elements[--this.size] = null;
+//        this.size--;
         return oldElement;
     }
 
@@ -135,6 +137,10 @@ public class RavenDynamicArray<E> {
      * 清空所有元素
      */
     public void clear() {
+        // 给数组中所有元素赋值 null
+        for (int i = 0; i < this.size; i++) {
+            this.elements[i] = null;
+        }
         this.size = 0;
     }
 
