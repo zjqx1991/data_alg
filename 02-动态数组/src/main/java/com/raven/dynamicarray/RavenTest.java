@@ -15,9 +15,13 @@ public class RavenTest {
         list.add(22);
         list.add(33);
         list.add(44);
-
-        list.add(55.5);
-        list.add(null);
+        list.add(55);
+        list.add(66);
+        list.add(77);
+        list.add(88);
+        list.add(99);
+        list.add(100);
+        list.add(111);
 
 //        System.out.println("args = " + list.set(-1, -1));
 //        System.out.println("args = " + list.set(0, 0));

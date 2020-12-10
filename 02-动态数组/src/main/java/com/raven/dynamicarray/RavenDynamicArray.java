@@ -86,8 +86,9 @@ public class RavenDynamicArray<E> {
      * 往 index 位置添加元素
      */
     public void add(int index, E element) {
+        // 扩容
+        extendCapacity();
         this.indexOutOfBoundsExceptionOfAdd(index);
-
         // 移动数组
         for (int i = this.size; i > index; i--) {
             this.elements[i] = this.elements[i - 1];
@@ -154,6 +155,24 @@ public class RavenDynamicArray<E> {
             throw new IndexOutOfBoundsException();
         }
     }
+
+    /**
+     * 数组空间不够，需要扩容
+     */
+    private void extendCapacity() {
+        int oldCapacity = this.elements.length;
+        if (this.size + 1 >= oldCapacity) {
+            int newCapacity = oldCapacity + (oldCapacity >> 1);
+            // 创建新数组
+            E[] newArray = (E[]) new Object[newCapacity];
+            for (int i = 0; i < this.size; i++) {
+                newArray[i] = this.elements[i];
+            }
+            this.elements = newArray;
+            System.out.println("发生扩容= " + newCapacity);
+        }
+    }
+
 
     @Override
     public String toString() {
