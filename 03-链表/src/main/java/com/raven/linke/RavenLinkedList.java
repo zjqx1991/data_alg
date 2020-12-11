@@ -115,7 +115,7 @@ public class RavenLinkedList<E> extends AbstractRavenList<E> {
      * @param index 下标位置
      * @return
      */
-    private Node<E> getNode(int index) {
+    public Node<E> getNode(int index) {
         if (0 == index) {
             return first;
         }

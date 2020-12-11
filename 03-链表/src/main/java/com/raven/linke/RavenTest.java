@@ -18,7 +18,8 @@ public class RavenTest {
 //        list.clear();
 //        System.out.println("args = " + list.isEmpty());
         System.out.println("args = " + list);
-        System.out.println("args = " + list.remove(1));
+        System.out.println("args = " + list);
+//        System.out.println("args = " + list.remove(1));
 
     }
 
