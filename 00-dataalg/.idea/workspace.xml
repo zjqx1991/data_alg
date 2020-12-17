@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4243703-87c4-43d3-b3ae-c1fb33156996" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/链表/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/链表/_237_删除链表中的节点.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/链表/_206_反转链表.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenTest.class" afterDir="false" />
@@ -75,7 +72,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607687215648</updated>
-      <workItem from="1607687220292" duration="3721000" />
+      <workItem from="1607687220292" duration="4408000" />
+      <workItem from="1607949145380" duration="92000" />
+      <workItem from="1608107060768" duration="4737000" />
+      <workItem from="1608198461000" duration="203000" />
+      <workItem from="1608198735918" duration="3005000" />
     </task>
     <servers />
   </component>
@@ -87,7 +88,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

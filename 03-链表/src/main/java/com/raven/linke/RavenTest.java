@@ -12,7 +12,6 @@ public class RavenTest {
         list.add(33);
         list.add(44);
         list.add(null);
-        list.add(0, 100);
 //        list.set(0, 0);
 //        list.add(0, 0);
 //        list.clear();
