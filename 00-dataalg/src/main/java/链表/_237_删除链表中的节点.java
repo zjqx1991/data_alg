@@ -10,12 +10,10 @@ import java.util.List;
  *
  */
 public class _237_删除链表中的节点 {
-
     public void deleteNode(ListNode node) {
         // 让下一个节点的值覆盖当前节点的值
         node.val = node.next.val;
         // 让当前节点的next 指向 下一个节点的next
         node.next = node.next.next;
     }
-
 }

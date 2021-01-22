@@ -2,9 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4243703-87c4-43d3-b3ae-c1fb33156996" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/链表/_206_反转链表.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/链表/_141_环形链表.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/链表/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/链表/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/链表/_206_反转链表.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/链表/_206_反转链表.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/链表/_237_删除链表中的节点.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/链表/_237_删除链表中的节点.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-fibonacci/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-fibonacci/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-fibonacci/src/main/java/com/raven/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-fibonacci/src/main/java/com/raven/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-fibonacci/target/classes/com/raven/Fibonacci.class" beforeDir="false" afterPath="$PROJECT_DIR$/../01-fibonacci/target/classes/com/raven/Fibonacci.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-动态数组/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-动态数组/src/main/java/com/raven/dynamicarray/RavenDynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/src/main/java/com/raven/dynamicarray/RavenDynamicArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-动态数组/src/main/java/com/raven/dynamicarray/RavenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/src/main/java/com/raven/dynamicarray/RavenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-动态数组/target/classes/com/raven/dynamicarray/RavenDynamicArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/target/classes/com/raven/dynamicarray/RavenDynamicArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-动态数组/target/classes/com/raven/dynamicarray/RavenTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/target/classes/com/raven/dynamicarray/RavenTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-链表/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/AbstractRavenList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/AbstractRavenList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenDynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenDynamicArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/AbstractRavenList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/AbstractRavenList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenDynamicArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenDynamicArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList$Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,7 +97,9 @@
       <workItem from="1607949145380" duration="92000" />
       <workItem from="1608107060768" duration="4737000" />
       <workItem from="1608198461000" duration="203000" />
-      <workItem from="1608198735918" duration="3005000" />
+      <workItem from="1608198735918" duration="7167000" />
+      <workItem from="1608812936472" duration="372000" />
+      <workItem from="1611281617270" duration="782000" />
     </task>
     <servers />
   </component>
