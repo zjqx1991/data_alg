@@ -2,37 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f184d92-4a51-4bfd-b24a-b2e3778eda41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/链表/_141_环形链表.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00-dataalg/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../00-dataalg/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00-dataalg/src/main/java/链表/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/链表/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00-dataalg/src/main/java/链表/_206_反转链表.java" beforeDir="false" afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/链表/_206_反转链表.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00-dataalg/src/main/java/链表/_237_删除链表中的节点.java" beforeDir="false" afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/链表/_237_删除链表中的节点.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-fibonacci/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-fibonacci/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-fibonacci/src/main/java/com/raven/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-fibonacci/src/main/java/com/raven/Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-fibonacci/target/classes/com/raven/Fibonacci.class" beforeDir="false" afterPath="$PROJECT_DIR$/../01-fibonacci/target/classes/com/raven/Fibonacci.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-动态数组/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-动态数组/src/main/java/com/raven/dynamicarray/RavenDynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/src/main/java/com/raven/dynamicarray/RavenDynamicArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-动态数组/src/main/java/com/raven/dynamicarray/RavenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/src/main/java/com/raven/dynamicarray/RavenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-动态数组/target/classes/com/raven/dynamicarray/RavenDynamicArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/target/classes/com/raven/dynamicarray/RavenDynamicArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-动态数组/target/classes/com/raven/dynamicarray/RavenTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../02-动态数组/target/classes/com/raven/dynamicarray/RavenTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/AbstractRavenList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/AbstractRavenList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenDynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenDynamicArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/src/main/java/com/raven/linke/RavenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/AbstractRavenList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/AbstractRavenList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenDynamicArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenDynamicArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-链表/target/classes/com/raven/linke/RavenTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/bst/RavenBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/RavenBinarySearchTree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -58,6 +41,9 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -83,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611281939621</updated>
-      <workItem from="1611281946332" duration="461000" />
+      <workItem from="1611281946332" duration="6437000" />
     </task>
     <servers />
   </component>
