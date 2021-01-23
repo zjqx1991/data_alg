@@ -1,12 +1,30 @@
 package com.raven.bst;
 
+import com.raven.bst.print.BinaryTreeInfo;
+
 /**
  * 二叉搜索树
  */
-public class RavenBinarySearchTree<E> {
+public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
     private int size = 0;
     private RavenNode rootNode = null;
+    private IRavenNodeComparator<E> comparator;
 
+
+    /**
+     * 无参构造
+     */
+    public RavenBinarySearchTree() {
+        this(null);
+    }
+
+    /**
+     * 传入比较器构成
+     * @param comparator 自定义比较器
+     */
+    public RavenBinarySearchTree(IRavenNodeComparator<E> comparator) {
+        this.comparator = comparator;
+    }
 
     /**
      * 添加元素
@@ -30,27 +48,31 @@ public class RavenBinarySearchTree<E> {
         while (null != node) {
             // 判断当前元素与父节点元素大小
             compare = this.compare(node.getElement(), element);
-            switch (compare) {
-                case 1:{
-                    node = node.leftNode;
-                }
-                case -1: {
-                    node = node.rightNode;
-                }
-                default:
+            // 记录父节点
+            parentNode = node;
+            if (compare > 0) {
+                node = node.leftNode;
+            }
+            else if (compare < 0) {
+                node = node.rightNode;
+            }
+            else {
+
             }
         }
 
         // 3、把新节点挂载到父节点
         RavenNode<E> newNode = new RavenNode<E>(element, parentNode);
-        switch (compare) {
-            case 1:
-                parentNode.rightNode = newNode;
-            case -1:
-                parentNode.leftNode = newNode;
-            default:
+        if (compare > 0) {
+            parentNode.leftNode = newNode;
         }
+        else if (compare < 0) {
+            parentNode.rightNode = newNode;
+        }
+        else {
 
+        }
+        this.size++;
     }
 
     /**
@@ -94,8 +116,12 @@ public class RavenBinarySearchTree<E> {
      * 比较元素值的大小
      */
     private int compare(E parent, E element) {
-//        parentNode
-        return 0;
+        // 自己实现二叉树元素大小比较
+        if (this.comparator != null) {
+            return this.comparator.comparaTo(parent, element);
+        }
+        // 自己没有实现二叉树元素大小比较，强制元素是
+        return ((Comparable) parent).compareTo(element);
     }
 
     /**
@@ -105,6 +131,26 @@ public class RavenBinarySearchTree<E> {
         if (null == element) {
             throw new IllegalArgumentException();
         }
+    }
+
+    @Override
+    public Object root() {
+        return this.rootNode;
+    }
+
+    @Override
+    public Object left(Object node) {
+        return ((RavenNode)node).leftNode;
+    }
+
+    @Override
+    public Object right(Object node) {
+        return ((RavenNode)node).rightNode;
+    }
+
+    @Override
+    public Object string(Object node) {
+        return ((RavenNode)node).element;
     }
 
     /**

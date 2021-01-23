@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4243703-87c4-43d3-b3ae-c1fb33156996" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/IRavenNodeComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/print/BinaryTreeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/print/BinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/print/InorderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/print/LevelOrderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/print/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/print/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/test/BSTTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/test/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/test/RavenTestComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-二叉搜索树/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-二叉搜索树/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/RavenBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-二叉搜索树/src/main/java/com/raven/bst/RavenBinarySearchTree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

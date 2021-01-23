@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f184d92-4a51-4bfd-b24a-b2e3778eda41" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/IRavenNodeComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/BinaryTreeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/BinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/InorderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/LevelOrderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/test/BSTTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/test/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/test/RavenTestComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/bst/RavenBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/RavenBinarySearchTree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,11 +53,25 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/raven/bst/print" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/raven/bst/print" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/raven/bst/print" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/raven/bst" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,6 +85,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="BSTTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.raven.bst.test.BSTTest" />
+      <module name="04-二叉搜索树" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.raven.bst.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BSTTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -69,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611281939621</updated>
-      <workItem from="1611281946332" duration="6437000" />
+      <workItem from="1611281946332" duration="11699000" />
     </task>
     <servers />
   </component>
@@ -86,5 +132,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/raven/bst/RavenBinarySearchTree.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
