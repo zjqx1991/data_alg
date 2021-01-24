@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4243703-87c4-43d3-b3ae-c1fb33156996" name="Default Changelist" comment="" />
+    <list default="true" id="b7d66deb-ad3b-46b4-a70c-fb6eff60bf2b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -35,13 +28,10 @@
   <component name="MavenRunner">
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectId" id="1lVfX4okoAxnq6lN5n2GoJjLx7Z" />
+  <component name="ProjectId" id="1nUxJJ9fCwQfxInkPHaqtvQevzC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -62,18 +52,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e4243703-87c4-43d3-b3ae-c1fb33156996" name="Default Changelist" comment="" />
-      <created>1607687215648</created>
+      <changelist id="b7d66deb-ad3b-46b4-a70c-fb6eff60bf2b" name="Default Changelist" comment="" />
+      <created>1611458396230</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1607687215648</updated>
-      <workItem from="1607687220292" duration="4408000" />
-      <workItem from="1607949145380" duration="92000" />
-      <workItem from="1608107060768" duration="4737000" />
-      <workItem from="1608198461000" duration="203000" />
-      <workItem from="1608198735918" duration="7167000" />
-      <workItem from="1608812936472" duration="372000" />
-      <workItem from="1611281617270" duration="917000" />
+      <updated>1611458396230</updated>
+      <workItem from="1611458401998" duration="408000" />
     </task>
     <servers />
   </component>
@@ -85,9 +69,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f184d92-4a51-4bfd-b24a-b2e3778eda41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/IRavenNodeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/BinaryTreeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/BinaryTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/InorderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/LevelOrderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/print/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/test/BSTTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/test/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/test/RavenTestComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/bst/RavenBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/bst/RavenBinarySearchTree.java" afterDir="false" />
-    </list>
+    <list default="true" id="5f184d92-4a51-4bfd-b24a-b2e3778eda41" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611281939621</updated>
-      <workItem from="1611281946332" duration="11699000" />
+      <workItem from="1611281946332" duration="12892000" />
     </task>
     <servers />
   </component>
@@ -132,16 +119,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/raven/bst/RavenBinarySearchTree.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
