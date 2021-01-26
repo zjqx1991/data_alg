@@ -5,6 +5,9 @@ import com.raven.print.BinaryTreeInfo;
 import sun.security.util.AuthResources_pt_BR;
 
 import javax.xml.soap.Node;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 
 /**
  * 二叉搜索树
@@ -113,23 +116,176 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
 
     }
 
-
     /**
-     * 前序遍历
+     * 层序遍历
      */
-    public void preorderTraversal() {
-        preorderTraversal(this.rootNode);
+    public void levelOrderTraversal() {
+        levelOrderTraversal(this.rootNode);
     }
 
-    private void preorderTraversal(RavenNode<E> node) {
+    /**
+     * 层序遍历
+     */
+    private void levelOrderTraversal(RavenNode node) {
+        if (node == null) return;
+        Queue<RavenNode> queue = new LinkedList<>();
+        queue.add(node);
+        while (!queue.isEmpty()) {
+            RavenNode peek = queue.remove();
+            if (peek.leftNode != null) {
+                queue.add(peek.leftNode);
+            }
+            if (peek.rightNode != null) {
+                queue.add(peek.rightNode);
+            }
+            System.out.println(peek.element);
+        }
+    }
+
+    /**
+     * 后序遍历
+     */
+    public void postOrderTraversal() {
+//        postOrderTraversalWithRecursion(this.rootNode);
+        postOrderTraversalWithNonRecursion(this.rootNode);
+    }
+
+    /**
+     * 后序遍历——递归
+     */
+    private void postOrderTraversalWithRecursion(RavenNode node) {
+        if (node == null) return;
+        postOrderTraversalWithRecursion(node.leftNode);
+        postOrderTraversalWithRecursion(node.rightNode);
+        System.out.println(node.element);
+    }
+
+    /**
+     * 后序遍历——非递归
+     */
+    private void postOrderTraversalWithNonRecursion(RavenNode node) {
+        if (node == null) return;
+        Stack<RavenNode> stack = new Stack<>();
+        RavenNode topNode = null;
+        while (null != node) {
+            //入栈
+            if (topNode == null) {
+                stack.push(node);
+            }
+            else if (node.element != topNode.element) {
+                stack.push(node);
+            }
+            //左子树
+            node = node.leftNode;
+
+            if (node == null && !stack.isEmpty()) {
+                RavenNode pop = stack.pop();
+                if (pop.rightNode == null) {
+                    //自己先显示
+                    System.out.println(pop.element);
+                    // 下一个出栈
+                    pop = stack.pop();
+                    if (topNode != null && topNode.element == pop.element) {
+                        System.out.println(pop.element);
+                        pop = stack.pop();
+                    } else {
+
+                    }
+
+                    // 在从新进栈
+                    stack.push(pop);
+                    topNode = pop;
+                    node = pop.rightNode;
+                } else {
+                    System.out.println(node.element);
+                    node = node.rightNode;
+                }
+            }
+        }
+    }
+
+    /**
+     * 中序遍历
+     */
+    public void inorderTraversal() {
+//        inorderTraversalWithRecursion(this.rootNode);
+        inorderTraversalWithNonRecursion(this.rootNode);
+    }
+
+    /**
+     * 中序遍历-递归
+     */
+    private void inorderTraversalWithRecursion(RavenNode<E> node) {
+        if (node == null) return;
+        inorderTraversalWithRecursion(node.leftNode);
+        System.out.println(node.element);
+        inorderTraversalWithRecursion(node.rightNode);
+    }
+
+    /**
+     * 中序遍历-非递归
+     */
+    private void inorderTraversalWithNonRecursion(RavenNode<E> node) {
+        if (node == null) return;
+        Stack<RavenNode> stack = new Stack<>();
+        while (node != null) {
+            stack.push(node);
+            node = node.leftNode;
+            if (node == null && !stack.isEmpty()) {
+                RavenNode pop = stack.pop();
+                System.out.println(pop.element);
+
+                if (pop.rightNode == null && !stack.isEmpty()) {
+                    pop = stack.pop();
+                    System.out.println(pop.element);
+                }
+                node = pop.rightNode;
+            }
+        }
+    }
+
+    /**
+     * 前序遍历-递归
+     */
+    public void preorderTraversal() {
+//        preorderTraversalWithRecursion(this.rootNode);
+        preorderTraversalWithNonRecursion(this.rootNode);
+    }
+
+    /**
+     * 递归
+     */
+    private void preorderTraversalWithRecursion(RavenNode<E> node) {
         if (null == node) return;
         System.out.println(node.element);
         // 遍历左子树
-        preorderTraversal(node.leftNode);
+        preorderTraversalWithRecursion(node.leftNode);
         // 遍历右子树
-        preorderTraversal(node.rightNode);
+        preorderTraversalWithRecursion(node.rightNode);
     }
 
+    /**
+     * 非递归
+     */
+    private void preorderTraversalWithNonRecursion(RavenNode<E> node) {
+        if (null == node) return;
+        // 创建一个 栈空间
+        Stack<RavenNode> stack = new Stack<>();
+
+        while (null != node) {
+            System.out.println(node.element);
+            // 右子树入栈
+            if (null != node.rightNode) {
+                stack.push(node.rightNode);
+            }
+            // 重复遍历左子树
+            node = node.leftNode;
+
+            if (node == null && !stack.isEmpty()) {
+                node = stack.pop();
+            }
+        }
+    }
 
     /**
      * 比较元素值的大小

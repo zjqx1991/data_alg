@@ -35,6 +35,13 @@ public class BSTTest {
 
         BinaryTrees.print(tree);
 
-        tree.preorderTraversal();
+        // 层序遍历
+        tree.levelOrderTraversal();
+        // 后序遍历
+//        tree.postOrderTraversal();
+        // 中序遍历
+//        tree.inorderTraversal();
+        // 前序遍历
+//        tree.preorderTraversal();
     }
 }

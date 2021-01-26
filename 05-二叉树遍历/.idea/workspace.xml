@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d66deb-ad3b-46b4-a70c-fb6eff60bf2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/IRavenNodeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/RavenBinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/print/BinaryTreeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/print/BinaryTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/print/InorderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/print/LevelOrderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/print/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/print/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/test/BSTTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/test/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raven/test/RavenTestComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/RavenBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/RavenBinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/test/BSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/test/BSTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree$RavenNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree$RavenNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/raven/test/BSTTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/test/BSTTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +42,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -100,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611458396230</updated>
-      <workItem from="1611458401998" duration="1776000" />
+      <workItem from="1611458401998" duration="18136000" />
     </task>
     <servers />
   </component>
