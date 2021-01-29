@@ -2,9 +2,6 @@ package com.raven;
 
 
 import com.raven.print.BinaryTreeInfo;
-import sun.security.util.AuthResources_pt_BR;
-
-import javax.xml.soap.Node;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -16,6 +13,7 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
     private int size = 0;
     private RavenNode rootNode = null;
     private IRavenNodeComparator<E> comparator;
+    private IRavenBinaryDataSource<E> dataSource;
 
 
     /**
@@ -116,12 +114,36 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
 
     }
 
+
+    /**
+     * 层序遍历
+     * @param rootNode          根节点
+     * @param dataSource        遍历器
+     */
+    public void levelOrderDataSource(RavenNode rootNode, IRavenBinaryDataSource dataSource) {
+        if (rootNode == null) return;
+        Queue<RavenNode> queue = new LinkedList<>();
+        queue.add(rootNode);
+        while (!queue.isEmpty()) {
+            RavenNode peek = queue.remove();
+            if (peek.leftNode != null) {
+                queue.add(peek.leftNode);
+            }
+            if (peek.rightNode != null) {
+                queue.add(peek.rightNode);
+            }
+//            System.out.println(peek.element);
+            dataSource.binaryDataSource(peek.element);
+        }
+    }
+
     /**
      * 层序遍历
      */
     public void levelOrderTraversal() {
         levelOrderTraversal(this.rootNode);
     }
+
 
     /**
      * 层序遍历
@@ -139,6 +161,50 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
                 queue.add(peek.rightNode);
             }
             System.out.println(peek.element);
+        }
+    }
+
+    /**
+     * 后序遍历
+     */
+    public void postOrderDataSource(RavenNode node, IRavenBinaryDataSource dataSource) {
+        if (node == null) return;
+        Stack<RavenNode> stack = new Stack<>();
+        RavenNode topNode = null;
+        while (null != node) {
+            //入栈
+            if (topNode == null) {
+                stack.push(node);
+            }
+            else if (node.element != topNode.element) {
+                stack.push(node);
+            }
+            //左子树
+            node = node.leftNode;
+
+            if (node == null && !stack.isEmpty()) {
+                RavenNode pop = stack.pop();
+                if (pop.rightNode == null) {
+                    //自己先显示
+                    System.out.println(pop.element);
+                    // 下一个出栈
+                    pop = stack.pop();
+                    if (topNode != null && topNode.element == pop.element) {
+                        System.out.println(pop.element);
+                        pop = stack.pop();
+                    } else {
+
+                    }
+
+                    // 在从新进栈
+                    stack.push(pop);
+                    topNode = pop;
+                    node = pop.rightNode;
+                } else {
+                    System.out.println(node.element);
+                    node = node.rightNode;
+                }
+            }
         }
     }
 
@@ -309,17 +375,17 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
     }
 
     @Override
-    public Object root() {
+    public RavenNode root() {
         return this.rootNode;
     }
 
     @Override
-    public Object left(Object node) {
+    public RavenNode left(Object node) {
         return ((RavenNode) node).leftNode;
     }
 
     @Override
-    public Object right(Object node) {
+    public RavenNode right(Object node) {
         return ((RavenNode) node).rightNode;
     }
 
