@@ -314,8 +314,8 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
      * 前序遍历-递归
      */
     public void preorderTraversal() {
-//        preorderTraversalWithRecursion(this.rootNode);
-        preorderTraversalWithNonRecursion(this.rootNode);
+        preorderTraversalWithRecursion(this.rootNode);
+//        preorderTraversalWithNonRecursion(this.rootNode);
     }
 
     /**
@@ -392,6 +392,30 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
     @Override
     public Object string(Object node) {
         return ((RavenNode) node).element;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        tostring(sb, this.rootNode, "");
+        return sb.toString();
+    }
+
+    /**
+     * 拼接输出
+     */
+    private void tostring(StringBuilder sb, RavenNode node, String prefix) {
+        if (node == null) return;
+        //拼接根
+        sb.append(prefix);
+        sb.append("{ ");
+        sb.append(node.element);
+        sb.append(" }");
+        sb.append("\n");
+        // 左子树
+        tostring(sb, node.leftNode, prefix + " -L- ");
+        // 右子树
+        tostring(sb, node.rightNode, prefix + " -R- ");
     }
 
     /**

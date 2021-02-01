@@ -5,7 +5,6 @@ import com.raven.IRavenBinaryDataSource;
 import com.raven.IRavenNodeComparator;
 import com.raven.RavenBinarySearchTree;
 import com.raven.print.BinaryTrees;
-import sun.security.util.AuthResources_pt_BR;
 
 public class BSTTest {
 
@@ -35,15 +34,16 @@ public class BSTTest {
             tree.add(element);
         }
 
+        // 打印二叉树
         BinaryTrees.print(tree);
 
         // 层序遍历
-        tree.levelOrderDataSource(tree.root(), new IRavenBinaryDataSource() {
-            @Override
-            public void binaryDataSource(Object data) {
-                System.out.println("data = " + data);
-            }
-        });
+//        tree.levelOrderDataSource(tree.root(), new IRavenBinaryDataSource() {
+//            @Override
+//            public void binaryDataSource(Object data) {
+//                System.out.println("data = " + data);
+//            }
+//        });
         // 层序遍历
 //        tree.levelOrderTraversal();
         // 后序遍历
@@ -51,6 +51,7 @@ public class BSTTest {
         // 中序遍历
 //        tree.inorderTraversal();
         // 前序遍历
-//        tree.preorderTraversal();
+        tree.preorderTraversal();
+        System.out.println(tree);
     }
 }
