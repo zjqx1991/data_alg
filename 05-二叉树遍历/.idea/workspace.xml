@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d66deb-ad3b-46b4-a70c-fb6eff60bf2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/二叉树/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/二叉树/_226_翻转二叉树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/二叉树/_144_二叉树的前序遍历.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/RavenBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/RavenBinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/test/BSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/test/BSTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/05-二叉树遍历.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree$RavenNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree$RavenNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raven/test/BSTTest$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/raven/test/BSTTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/test/BSTTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611458396230</updated>
       <workItem from="1611458401998" duration="24002000" />
-      <workItem from="1611902695062" duration="972000" />
+      <workItem from="1611902695062" duration="7624000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,10 @@ package com.raven;
 
 
 import com.raven.print.BinaryTreeInfo;
+import com.sun.org.apache.xpath.internal.functions.FuncFalse;
+import com.sun.xml.internal.messaging.saaj.soap.FastInfosetDataContentHandler;
+import com.sun.xml.internal.messaging.saaj.soap.impl.HeaderImpl;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -114,11 +118,103 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
 
     }
 
+    public Boolean isTree() {
+
+        return isTree(this.rootNode);
+    }
+
+    private Boolean isTree(RavenNode rootNode) {
+        if (rootNode == null) return false;
+        // 记录右子树为 null
+        boolean rightNull = false;
+        Queue<RavenNode> queue = new LinkedList<>();
+        queue.add(rootNode);
+        while (!queue.isEmpty()) {
+            RavenNode peek = queue.remove();
+
+            // 左子树为null，右子树不为null
+            if (peek.leftNode == null && peek.rightNode != null) {
+                return false;
+            }
+            // 右子树为null，接下来的元素只能是 叶子节点
+            if (rightNull) {
+                if (peek.leftNode != null || peek.rightNode != null) {
+                    return false;
+                }
+            }
+            // 标记右子树为 null
+            if (peek.rightNode == null) {
+                rightNull = true;
+            }
+
+            // 左子树入队
+            if (peek.leftNode != null) {
+                queue.add(peek.leftNode);
+            }
+            // 右子树入队
+            if (peek.rightNode != null) {
+                queue.add(peek.rightNode);
+            }
+
+        }
+        return true;
+    }
+
+
+    /**
+     * 二叉树高度
+     */
+    public int treeHeight() {
+//        return treeHeightWithRecursion(this.rootNode);
+        return treeHeightWithNonRecursion(this.rootNode);
+    }
+
+    /**
+     * 递归求 二叉树 高度
+     * 树的高度，取决于树的左子树和右子树的高度
+     * @param node 节点
+     */
+    private int treeHeightWithRecursion(RavenNode node) {
+        if (node == null) return 0;
+        return 1 + Math.max(treeHeightWithRecursion(node.leftNode), treeHeightWithRecursion(node.rightNode));
+    }
+
+    /**
+     * 非递归方式求二叉树高度
+     *
+     * @param node
+     * @return
+     */
+    private int treeHeightWithNonRecursion(RavenNode node) {
+        if (rootNode == null) return 0;
+        int height = 0;
+        int rowNum = 1;
+        Queue<RavenNode> queue = new LinkedList<>();
+        queue.add(rootNode);
+        while (!queue.isEmpty()) {
+            RavenNode peek = queue.remove();
+            if (peek.leftNode != null) {
+                queue.add(peek.leftNode);
+            }
+            if (peek.rightNode != null) {
+                queue.add(peek.rightNode);
+            }
+            rowNum--;
+            if (rowNum == 0) {
+                // 层数+1
+                height++;
+                // 重新记录层的元素
+                rowNum = queue.size();
+            }
+        }
+        return height;
+    }
 
     /**
      * 层序遍历
-     * @param rootNode          根节点
-     * @param dataSource        遍历器
+     *
+     * @param rootNode   根节点
+     * @param dataSource 遍历器
      */
     public void levelOrderDataSource(RavenNode rootNode, IRavenBinaryDataSource dataSource) {
         if (rootNode == null) return;
@@ -132,7 +228,6 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
             if (peek.rightNode != null) {
                 queue.add(peek.rightNode);
             }
-//            System.out.println(peek.element);
             dataSource.binaryDataSource(peek.element);
         }
     }
@@ -175,8 +270,7 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
             //入栈
             if (topNode == null) {
                 stack.push(node);
-            }
-            else if (node.element != topNode.element) {
+            } else if (node.element != topNode.element) {
                 stack.push(node);
             }
             //左子树
@@ -237,8 +331,7 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
             //入栈
             if (topNode == null) {
                 stack.push(node);
-            }
-            else if (node.element != topNode.element) {
+            } else if (node.element != topNode.element) {
                 stack.push(node);
             }
             //左子树
