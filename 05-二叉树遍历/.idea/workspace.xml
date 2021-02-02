@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d66deb-ad3b-46b4-a70c-fb6eff60bf2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/二叉树/_145_二叉树的后序遍历.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../00-dataalg/src/main/java/二叉树/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/二叉树/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/RavenBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/RavenBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/test/BSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/test/BSTTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raven/test/BSTTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/test/BSTTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/二叉树/_102_二叉树的层序遍历.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
