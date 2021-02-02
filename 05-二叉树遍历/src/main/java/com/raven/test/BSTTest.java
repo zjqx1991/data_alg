@@ -8,13 +8,13 @@ import com.raven.print.BinaryTrees;
 
 public class BSTTest {
 
-    static int[] elements1 = new int[]{7, 4, 9, 2, 5, 8, 11, 1, 3, 10, 12};
+    static int[] elements = new int[]{7, 4, 9, 2, 5, 8, 11, 1, 3, 10, 12};
     static int[] elements2 = new int[]{7, 4, 9, 2, 5, 8, 11};
     static int[] elements3 = new int[]{7, 4, 9, 2, 5};
     static int[] elements4 = new int[]{7, 4, 9, 2, 5, 8};
     static int[] elements5 = new int[]{7, 4, 9, 2, 5, 8, 1};
     static int[] elements6 = new int[]{7, 4, 9, 8, 1};
-    static int[] elements = new int[]{7, 9, 8, 1};
+    static int[] elements7 = new int[]{7, 9, 8, 1};
 
     public static void main(String[] args) {
         test();
@@ -55,9 +55,9 @@ public class BSTTest {
         // 层序遍历
 //        tree.levelOrderTraversal();
         // 后序遍历
-//        tree.postOrderTraversal();
+        tree.postOrderTraversal();
         // 中序遍历
-        tree.inorderTraversal();
+//        tree.inorderTraversal();
         // 前序遍历
 //        tree.preorderTraversal();
 //        System.out.println(tree);

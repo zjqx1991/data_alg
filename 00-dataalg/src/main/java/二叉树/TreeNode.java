@@ -1,6 +1,8 @@
 package 二叉树;
 
-public class TreeNode {
+import javax.swing.*;
+
+public class TreeNode extends JComponent {
     int val;
     TreeNode left;
     TreeNode right;

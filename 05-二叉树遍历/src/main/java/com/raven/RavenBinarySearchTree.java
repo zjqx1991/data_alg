@@ -6,6 +6,7 @@ import com.sun.org.apache.xpath.internal.functions.FuncFalse;
 import com.sun.xml.internal.messaging.saaj.soap.FastInfosetDataContentHandler;
 import com.sun.xml.internal.messaging.saaj.soap.impl.HeaderImpl;
 
+import javax.swing.tree.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -172,6 +173,7 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
     /**
      * 递归求 二叉树 高度
      * 树的高度，取决于树的左子树和右子树的高度
+     *
      * @param node 节点
      */
     private int treeHeightWithRecursion(RavenNode node) {
@@ -323,44 +325,41 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
     /**
      * 后序遍历——非递归
      */
-    private void postOrderTraversalWithNonRecursion(RavenNode node) {
-        if (node == null) return;
-        Stack<RavenNode> stack = new Stack<>();
-        RavenNode topNode = null;
-        while (null != node) {
-            //入栈
-            if (topNode == null) {
-                stack.push(node);
-            } else if (node.element != topNode.element) {
-                stack.push(node);
-            }
-            //左子树
-            node = node.leftNode;
+    private void postOrderTraversalWithNonRecursion(RavenNode root) {
+        if (root == null) return;
+        // 创建栈空间
+        Stack<RavenNode> stack = new Stack<RavenNode>();
+        // 出栈记录
+        RavenNode popNode = null;
 
-            if (node == null && !stack.isEmpty()) {
+        while (root != null) {
+            // 自己入栈
+            stack.push(root);
+            root = root.leftNode;
+        }
+
+        while (!stack.isEmpty()) {
+            RavenNode peek = stack.peek();
+            if (peek.rightNode == null) {
                 RavenNode pop = stack.pop();
-                if (pop.rightNode == null) {
-                    //自己先显示
+                popNode = pop;
+                System.out.println(pop.element);
+            } else {
+                RavenNode node = peek.rightNode;
+                if (node == popNode) {
+                    RavenNode pop = stack.pop();
+                    popNode = pop;
                     System.out.println(pop.element);
-                    // 下一个出栈
-                    pop = stack.pop();
-                    if (topNode != null && topNode.element == pop.element) {
-                        System.out.println(pop.element);
-                        pop = stack.pop();
-                    } else {
-
-                    }
-
-                    // 在从新进栈
-                    stack.push(pop);
-                    topNode = pop;
-                    node = pop.rightNode;
                 } else {
-                    System.out.println(node.element);
-                    node = node.rightNode;
+                    while (node != null) {
+                        stack.push(node);
+                        node = node.leftNode;
+                    }
                 }
+
             }
         }
+
     }
 
     /**
