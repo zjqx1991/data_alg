@@ -42,8 +42,8 @@ public class BSTTest {
 
         // 打印二叉树
         BinaryTrees.print(tree);
-        int height = tree.treeHeight();
-        System.out.println("真二叉树===" + tree.isTree());
+//        int height = tree.treeHeight();
+//        System.out.println("真二叉树===" + tree.isTree());
 
         // 层序遍历
 //        tree.levelOrderDataSource(tree.root(), new IRavenBinaryDataSource() {
@@ -57,7 +57,7 @@ public class BSTTest {
         // 后序遍历
 //        tree.postOrderTraversal();
         // 中序遍历
-//        tree.inorderTraversal();
+        tree.inorderTraversal();
         // 前序遍历
 //        tree.preorderTraversal();
 //        System.out.println(tree);
