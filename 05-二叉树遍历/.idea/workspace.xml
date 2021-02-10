@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d66deb-ad3b-46b4-a70c-fb6eff60bf2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/二叉树/_107_二叉树的层序遍历_II.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../00-dataalg/src/main/java/二叉树/_662_二叉树最大宽度.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/RavenBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/RavenBinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raven/test/BSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raven/test/BSTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree$RavenNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree$RavenNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/RavenBinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/raven/test/BSTTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raven/test/BSTTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611458396230</updated>
       <workItem from="1611458401998" duration="24002000" />
-      <workItem from="1611902695062" duration="14056000" />
+      <workItem from="1611902695062" duration="23580000" />
     </task>
     <servers />
   </component>

@@ -8,13 +8,19 @@ import com.raven.print.BinaryTrees;
 
 public class BSTTest {
 
-    static int[] elements = new int[]{7, 4, 9, 2, 5, 8, 11, 1, 3, 10, 12};
-    static int[] elements2 = new int[]{7, 4, 9, 2, 5, 8, 11};
+//    static int[] elements = new int[]{7};
+//    static int[] elements = new int[]{9, 11, 10, 12};
+//    static int[] elements = new int[]{4, 2, 1, 3};
+    static int[] elements = new int[]{7, 4, 9, 2, 11, 1, 3, 10, 12};
+    static int[] elements11 = new int[]{7, 4, 9, 2, 5, 8, 11, 3, 10};
     static int[] elements3 = new int[]{7, 4, 9, 2, 5};
     static int[] elements4 = new int[]{7, 4, 9, 2, 5, 8};
     static int[] elements5 = new int[]{7, 4, 9, 2, 5, 8, 1};
     static int[] elements6 = new int[]{7, 4, 9, 8, 1};
     static int[] elements7 = new int[]{7, 9, 8, 1};
+    static int[] elements8 = new int[]{7, 4, 9, 2, 5, 8, 11, 1, 3, 10, 12};
+    static int[] elements9 = new int[]{8, 4, 13, 2, 6, 10, 1, 3, 5, 7, 9, 12, 11};
+    static int[] elements10 = new int[]{4, 1, 8, 2, 7, 10, 3, 5, 9, 11, 6};
 
     public static void main(String[] args) {
         test();
@@ -42,6 +48,16 @@ public class BSTTest {
 
         // 打印二叉树
         BinaryTrees.print(tree);
+        tree.remove(11);
+//        tree.remove(9);
+//        tree.remove(8);
+//        tree.remove(10);
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        BinaryTrees.print(tree);
+//        tree.predecessorTest(tree.root());
+//        tree.successorTest(tree.root());
 //        int height = tree.treeHeight();
 //        System.out.println("真二叉树===" + tree.isTree());
 
@@ -55,7 +71,7 @@ public class BSTTest {
         // 层序遍历
 //        tree.levelOrderTraversal();
         // 后序遍历
-        tree.postOrderTraversal();
+//        tree.postOrderTraversal();
         // 中序遍历
 //        tree.inorderTraversal();
         // 前序遍历

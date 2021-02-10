@@ -5,6 +5,7 @@ import com.raven.print.BinaryTreeInfo;
 import com.sun.org.apache.xpath.internal.functions.FuncFalse;
 import com.sun.xml.internal.messaging.saaj.soap.FastInfosetDataContentHandler;
 import com.sun.xml.internal.messaging.saaj.soap.impl.HeaderImpl;
+import javafx.scene.transform.Rotate;
 
 import javax.swing.tree.TreeNode;
 import java.util.LinkedList;
@@ -86,7 +87,74 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
      * 删除元素
      */
     public void remove(E element) {
+        RavenNode node = this.getNode(element);
+        if (node == null) return;
+        // 定义前驱节点
+        RavenNode deleteNode = node;
+        // 1、先删除拥有2个度的节点
+        if (node.leftNode != null && node.rightNode != null) {
+            // 2、获取 前驱节点
+            deleteNode = this.predecessor(node);
+            // 3、更换元素值
+            node.element = deleteNode.element;
+        }
+        // 4、删除节点
+        // 删除度为0
+        if (deleteNode.leftNode == null && deleteNode.rightNode == null) {
+            if (deleteNode.parentNode == null) {
+                deleteNode = null;
+            } else if (deleteNode == deleteNode.parentNode.leftNode) {
+                deleteNode.parentNode.leftNode = null;
+            } else {
+                deleteNode.parentNode.rightNode = null;
+            }
+        }
+        // 删除度为 1
+        else {
+            if (deleteNode.leftNode != null) {
+                if (deleteNode.parentNode == null) {
+                    deleteNode.leftNode.parentNode = null;
+                    this.rootNode = deleteNode.leftNode;
+                }
+                else {
+                    deleteNode.leftNode.parentNode = deleteNode.parentNode;
+                    deleteNode.parentNode.leftNode = deleteNode.leftNode;
+                }
+            } else {
+                if (deleteNode.parentNode == null) {
+                    deleteNode.rightNode.parentNode = null;
+                    this.rootNode = deleteNode.rightNode;
+                }
+                else {
+                    deleteNode.rightNode.parentNode = deleteNode.parentNode;
+                    deleteNode.parentNode.rightNode = deleteNode.rightNode;
+                }
 
+            }
+        }
+    }
+
+    /**
+     * 根据 元素 获取node
+     *
+     * @param element
+     * @return
+     */
+    private RavenNode getNode(E element) {
+        if (this.rootNode == null) return null;
+        RavenNode node = this.rootNode;
+        int compare = 0;
+        while (node != null) {
+            compare = compare((E) node.element, element);
+            if (compare > 0) {
+                node = node.leftNode;
+            } else if (compare < 0) {
+                node = node.rightNode;
+            } else {
+                return node;
+            }
+        }
+        return null;
     }
 
     /**
@@ -159,6 +227,107 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
 
         }
         return true;
+    }
+
+
+    /**
+     * 前驱节点
+     *
+     * @param root
+     * @return
+     */
+    public RavenNode predecessorTest(RavenNode root) {
+        RavenNode node = root.leftNode.leftNode.leftNode;
+        System.out.println("求===" + node.element + " 前驱节点");
+        RavenNode ravenNode = predecessor(node);
+        if (ravenNode == null) {
+            System.out.println("  null ");
+        } else {
+            System.out.println(" " + ravenNode.element + " ");
+        }
+        return ravenNode;
+    }
+
+    /**
+     * 前驱节点
+     */
+    private RavenNode predecessor(RavenNode root) {
+        if (root == null) return null;
+
+        // 1、左子树存在
+        if (root.leftNode != null) {
+            root = root.leftNode;
+            while (root.rightNode != null) {
+                root = root.rightNode;
+            }
+        }
+        // 2、左子树不存在
+        else {
+            // 2.1、父节点存在
+            RavenNode parentNode = root.parentNode;
+            if (parentNode != null) {
+                while (parentNode.rightNode != root) {
+                    root = root.parentNode;
+                    parentNode = root.parentNode;
+                    if (parentNode == null) {
+                        return null;
+                    }
+                }
+                if (root != null) {
+                    root = root.parentNode;
+                }
+            } else {
+                root = null;
+            }
+        }
+        return root;
+    }
+
+
+    /**
+     * 后继节点
+     *
+     * @param root
+     * @return
+     */
+    public RavenNode successorTest(RavenNode root) {
+        RavenNode node = root.rightNode.rightNode.rightNode;
+        System.out.println();
+        System.out.println("求===" + node.element + " 后继节点");
+        RavenNode ravenNode = successor(node);
+        if (ravenNode == null) {
+            System.out.println("  null ");
+        } else {
+            System.out.println(" " + ravenNode.element + " ");
+        }
+        return ravenNode;
+    }
+
+    private RavenNode successor(RavenNode node) {
+        if (node == null) return null;
+
+        // 1、右子树不为null
+        if (node.rightNode != null) {
+            node = node.rightNode;
+            while (node.leftNode != null) {
+                node = node.leftNode;
+            }
+            return node;
+        } else {
+            RavenNode parentNode = node.parentNode;
+            if (parentNode != null) {
+                while (parentNode.leftNode != node) {
+                    node = parentNode;
+                    parentNode = node.parentNode;
+                    if (parentNode == null) {
+                        return null;
+                    }
+                }
+                return parentNode;
+            } else {
+                return null;
+            }
+        }
     }
 
 
@@ -483,8 +652,12 @@ public class RavenBinarySearchTree<E> implements BinaryTreeInfo {
 
     @Override
     public Object string(Object node) {
-        return ((RavenNode) node).element;
+        if (((RavenNode) node).parentNode == null) {
+            return "( null"  + " )_" + ((RavenNode) node).element;
+        }
+        return "( " + ((RavenNode) node).parentNode.element + " )_" + ((RavenNode) node).element;
     }
+
 
     @Override
     public String toString() {
